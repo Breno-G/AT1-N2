@@ -23,32 +23,30 @@ O dataset utilizado é o [Default of Credit Card Clients Dataset](https://www.ka
 ## ⚙️ Tecnologias Utilizadas
 
 - Python 3.8+
-- Pandas, NumPy
-- Matplotlib, Seaborn
+- Pandas
+- NumPy
+- Matplotlib
 - Scikit-learn
 - Jupyter Notebook
-- python-docx
 
 ---
 
 ## ✅ Etapas do Projeto
 
-### 1. Leitura e Compreensão dos Dados
+### 1. Leitura e Limpeza dos Dados
 - Importação do dataset
 - Renomeação de colunas (`PAY_0` → `PAY_1`, `default.payment.next.month` → `DEF_NEXT_MONTH`)
-
-### 2. Limpeza de Dados
 - Remoção da coluna `ID`
 - Correção de categorias inválidas em `EDUCATION` (valores 0, 5, 6 → 4)
 - Correção de `MARRIAGE` com valor 0 substituído por 3
 - Substituição de valores negativos em `PAY_*` por 0
 
-### 3. Análise Exploratória (EDA)
+### 2. Análise Exploratória (EDA)
 - Estatísticas descritivas com `.describe()` e `.info()`
 - Visualização de distribuições com histogramas e boxplots
 - Mapa de correlação entre faturas e pagamentos
 
-### 4. Pré-processamento
+### 3. Pré-processamento
 Pré-processamento com Pipelines
 - Uso de `Pipeline` e `ColumnTransformer` para tratamento automático de dados
 - **Colunas numéricas**:
@@ -59,14 +57,14 @@ Pré-processamento com Pipelines
 - Junção dos dados transformados em um `DataFrame` processado
 - Separação clara entre `X` (features) e `y` (alvo)
 
-### 5. Modelagem
+### 4. Modelagem
 - Divisão dos dados em treino/teste (70%/30%) com estratificação
 - Modelos treinados:
   - DummyClassifier (baseline)
   - DecisionTreeClassifier
   - RandomForestClassifier com ajuste de hiperparâmetros (`GridSearchCV`)
 
-### 6. Avaliação dos Modelos
+### 5. Avaliação dos Modelos
 - Métricas utilizadas:
   - Acurácia
   - Precisão
