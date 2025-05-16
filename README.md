@@ -83,7 +83,7 @@ Pré-processamento com Pipelines
 - **Recall**: 33.15%
 - **F1 Score**: 44.99%
 - **ROC AUC**: 64.56%
-Matriz de confusão: 
+- Matriz de confusão: 
  [[6726  283]
  [1331  660]]
 
