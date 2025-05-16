@@ -101,8 +101,8 @@ Pré-processamento com Pipelines
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seuusuario/previsao-inadimplencia.git
-cd previsao-inadimplencia
+git clone https://github.com/Breno-G/Previsao-Inadimplencia.git
+cd Previsao-Inadimplencia
 ```
 
 2. Instale os pacotes:
@@ -112,7 +112,7 @@ pip install -r requirements.txt
 
 3. Execute o notebook:
 ```bash
-jupyter notebook Previsao_Inadinplencia1_2.ipynb
+jupyter notebook Previsao_Inadinplencia.ipynb
 ```
 
 ---
