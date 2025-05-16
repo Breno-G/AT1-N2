@@ -92,6 +92,7 @@ Pré-processamento com Pipelines
 ## 🧠 Conclusões
 
 - O Random Forest superou outros modelos, com desempenho equilibrado entre precisão e recall, porém foi o modelo que mais demorou para executar.
+- O projeto tem margem para evolução. 
 - O uso de métricas como F1 e AUC foi essencial devido ao desbalanceamento das classes.
 
 ---
